@@ -1,0 +1,68 @@
+/* (A) WRAPPER */
+.hoverwrap {
+    position: relative;
+ 
+  }
+  
+  /* (D) SHOW/HIDE */
+  .hovercap {
+    visibility: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .hoverwrap:hover .hovercap {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.text{
+    font-family: cursive;
+    font-size: larger;
+    background-color: rgb(240, 248, 167);
+    border-radius: 5px;
+}
+
+.card {
+    position: relative;
+    height: 4em;
+    width: 2.2em;
+    border: 1px solid black;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    background-color: white;
+    float: left;
+    margin-left: 1%;
+  }
+  
+  .card.red {
+    color: red;
+  }
+  
+  .card.black {
+    color: black;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: attr(data-value);
+    font-size: 1rem;
+  }
+  
+  .card::before {
+    top: .5rem;
+    left: .5rem
+  }
+  
+  .card::after {
+    bottom: .5rem;
+    right: .5rem;
+    transform: rotate(180deg);
+  }
+
+  td{
+      text-align: center;
+  }
