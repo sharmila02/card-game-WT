@@ -29,7 +29,7 @@ function displayRandomCards(){
         c.innerHTML = cards[rand_i]['suit'];
         c.dataset.value = cards[rand_i]['value'] + cards[rand_i]['suit'];
         c.className = "card " + cardColor(cards[rand_i]['suit']);
-        //console.log(cards.splice(rand_i, 1));
+        cards.splice(rand_i, 1);
 
     }
 }
