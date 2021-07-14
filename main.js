@@ -30,6 +30,6 @@ function displayRandomCards(){
         c.dataset.value = cards[rand_i]['value'] + cards[rand_i]['suit'];
         c.className = "card " + cardColor(cards[rand_i]['suit']);
         cards.splice(rand_i, 1);
-
     }
+    cards = deck['cards'];
 }
