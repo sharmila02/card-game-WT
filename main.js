@@ -31,5 +31,5 @@ function displayRandomCards(){
         c.className = "card " + cardColor(cards[rand_i]['suit']);
         cards.splice(rand_i, 1);
     }
-    cards = deck['cards'];
+    cards = new Deck()['cards'];
 }
